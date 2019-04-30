@@ -23,7 +23,7 @@ function validateInput(value) {
     if (integer && (sign === 1)) {
         return true;
     } else {
-        return 'Please enter a whole non-zero number.';
+        return 'Please enter a number from 1-10.';
     }
 }
 
@@ -84,7 +84,7 @@ function promptUserPurchase() {
                     connection.query(updateQueryStr, function (err, data) {
                         if (err) throw err;
 
-                        console.log('Your oder has been placed! Your total is $' + productData.price * quantity);
+                        console.log('Your order has been placed! Your total is $' + productData.price * quantity);
                         console.log('Thank you for shopping with us!');
                         console.log("\n---------------------------------------------------------------------\n");
 
