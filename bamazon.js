@@ -23,7 +23,7 @@ function validateInput(value) {
     if (integer && (sign === 1)) {
         return true;
     } else {
-        return 'Please enter a whole non-zero number.';
+        return 'Please enter a number from 1-10.';
     }
 }
 
